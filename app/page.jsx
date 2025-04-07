@@ -19,19 +19,28 @@ const Home = () => {
               <span className="text-accent">Sanchit Pandey</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiances and I am
-              proficient in various programming languages and technologies.
+              Computer Science undergraduate with a strong foundation in
+              programming and problem-solving, seeking to contribute to
+              innovative tech projects.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variants="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
+              <a
+                href="https://docs.google.com/document/d/1dydThUm26RHfK1EF0L-ETgTpi201a4Oqvil1TfBLkN4/export?format=pdf"
+                download="Sanchit_Pandey_Resume.pdf"
+                style={{ textDecoration: "none" }}
               >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+                <Button
+                  variants="outline"
+                  size="lg"
+                  className="uppercase flex items-center gap-2"
+                  as="a"
+                  href="https://docs.google.com/document/d/1dydThUm26RHfK1EF0L-ETgTpi201a4Oqvil1TfBLkN4/export?format=pdf"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
